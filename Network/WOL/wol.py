@@ -11,11 +11,11 @@ mycoms = {
     "pc1" : "AA-BB-CC-DD-EE-FF",
     "pc2" : "11-22-33-44-55-66",
     "Xeon" : "2C-FD-A1-34-32-10",
+    "GPU Server" : "48-A4-72-77-54-C5"
 }
 
 def wake_on_lan(mac):
     # 켜질 컴퓨터의 Mac 주소
-    mac = "48-A4-72-77-54-C5"
     addrs = mac.split("-")
     hw_addr = struct.pack("BBBBBB",
                           int(addrs[0], 16),
